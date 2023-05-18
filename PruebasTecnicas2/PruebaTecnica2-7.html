@@ -11,12 +11,16 @@
 
 
     <script>
-        let a = parseInt(prompt("Ingrese un numero"));
+        function containsUppercase(str) {
+        return /[A-Z]/.test(str);
+        }
 
-        if(a % 2 == 0){
-            alert("El numero que ingreso es par")
+        let text = prompt("Ingrese algo");
+       
+        if(containsUppercase(text[0])){
+            alert("Empieza con Mayuscula")
         }else{
-            alert("El numero que ingreso es impar")
+            alert("No empieza con Mayuscula")
         }
     </script>
 </body>

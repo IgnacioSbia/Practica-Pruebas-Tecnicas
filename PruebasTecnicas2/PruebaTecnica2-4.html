@@ -11,13 +11,10 @@
 
 
     <script>
-        let a = parseInt(prompt("Ingrese un numero"));
+        let number = parseInt(prompt("Ingrese un numero"));
+        let number2 = parseInt(prompt("Ingrese un segundo numero"));
 
-        if(a % 2 == 0){
-            alert("El numero que ingreso es par")
-        }else{
-            alert("El numero que ingreso es impar")
-        }
+        alert(`El numero mayor es ${number>number2 ? number : number2}`)
     </script>
 </body>
 </html>

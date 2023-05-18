@@ -11,12 +11,16 @@
 
 
     <script>
-        let a = parseInt(prompt("Ingrese un numero"));
+        function isNumber(char) {
+        return /^\d$/.test(char);
+        }
 
-        if(a % 2 == 0){
-            alert("El numero que ingreso es par")
+        let text = prompt("Ingrese algo");
+       
+        if(isNumber(text[0])){
+            alert("El primer caracter que ingerso es un numero")
         }else{
-            alert("El numero que ingreso es impar")
+            alert("El primer caracter que ingreso es una letra u otro caracter")
         }
     </script>
 </body>
